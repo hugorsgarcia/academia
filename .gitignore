@@ -1,0 +1,24 @@
+# Ignorar node_modules e arquivos de build
+node_modules/
+dist/
+build/
+.next/
+.cache/
+
+# Ignorar arquivos de configuração sensíveis
+.env
+.env.*
+
+# Ignorar logs
+logs/
+*.log
+
+# Ignorar arquivos específicos do frontend
+frontend/node_modules/
+frontend/.next/
+frontend/.cache/
+
+# Ignorar arquivos específicos do backend
+backend/node_modules/
+backend/logs/
+backend/.env
