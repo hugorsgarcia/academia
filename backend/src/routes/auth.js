@@ -7,17 +7,28 @@ const validate = require('../middleware/validate');
 
 // Validation rules
 const registerValidation = [
+  // Support both old format (firstName + lastName) and new format (name)
   body('firstName')
-    .notEmpty()
-    .withMessage('Nome é obrigatório')
+    .optional()
     .isLength({ min: 2, max: 50 })
     .withMessage('Nome deve ter entre 2 e 50 caracteres'),
   
   body('lastName')
-    .notEmpty()
-    .withMessage('Sobrenome é obrigatório')
+    .optional()
     .isLength({ min: 2, max: 50 })
     .withMessage('Sobrenome deve ter entre 2 e 50 caracteres'),
+  
+  body('name')
+    .optional()
+    .isLength({ min: 2, max: 100 })
+    .withMessage('Nome deve ter entre 2 e 100 caracteres')
+    .custom((value, { req }) => {
+      // Ensure either name is provided OR both firstName and lastName
+      if (!value && (!req.body.firstName || !req.body.lastName)) {
+        throw new Error('Nome completo é obrigatório (forneça "name" ou "firstName" + "lastName")');
+      }
+      return true;
+    }),
   
   body('email')
     .isEmail()
@@ -28,9 +39,18 @@ const registerValidation = [
     .isLength({ min: 6 })
     .withMessage('Senha deve ter pelo menos 6 caracteres'),
   
-  body('userType')
+  // Support both userType and role
+  body(['userType', 'role'])
+    .optional()
     .isIn(['super_admin', 'admin', 'manager', 'trainer', 'receptionist', 'student'])
-    .withMessage('Tipo de usuário inválido'),
+    .withMessage('Tipo de usuário inválido')
+    .custom((value, { req }) => {
+      // Ensure either userType or role is provided
+      if (!req.body.userType && !req.body.role) {
+        throw new Error('Tipo de usuário é obrigatório (forneça "userType" ou "role")');
+      }
+      return true;
+    }),
   
   body('phone')
     .optional()

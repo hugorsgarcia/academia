@@ -33,11 +33,10 @@ export function SimpleRegisterForm() {
     
     try {
       const requestData = {
-        firstName: formData.firstName,
-        lastName: formData.lastName,
+        name: `${formData.firstName} ${formData.lastName}`,
         email: formData.email,
         password: formData.password,
-        userType: 'student'
+        role: 'student'
       };
       
       console.log('Enviando dados:', requestData);

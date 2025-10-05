@@ -15133,3 +15133,3378 @@
   environment: 'development',
   timestamp: '2025-10-05 11:50:48'
 }
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:18:54'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:18:54'
+}
+{
+  message: 'Skipping Redis connection for development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:18:54'
+}
+{
+  message: '🚀 Server running on port 3002',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:18:54'
+}
+{
+  message: '🏥 Academia Management System API v1.0.0',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:18:54'
+}
+{
+  message: '🌍 Environment: development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:18:54'
+}
+{
+  message: '📚 API Documentation: http://localhost:3002/api/docs',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:18:54'
+}
+{
+  message: '❤️  Health Check: http://localhost:3002/health',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:18:54'
+}
+{
+  message: '💾 Database: connected | 🔄 Redis: disconnected',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:18:54'
+}
+{
+  message: '🔧 To enable full functionality, configure MySQL and Redis',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:18:54'
+}
+{
+  message: '🚀 Available API Routes:',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:18:54'
+}
+{
+  message: '   POST /api/auth/register - Register new user',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:18:54'
+}
+{
+  message: '   POST /api/auth/login - User login',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:18:54'
+}
+{
+  message: '   GET  /health - Health check',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:18:54'
+}
+{
+  message: '   GET  /api/docs - API documentation',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:18:54'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  userId: 11,
+  level: 'info',
+  message: 'User logged in: hhugokta@hotmail.com',
+  timestamp: '2025-10-05 14:19:14'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:19:14 +0000] "POST /api/auth/login HTTP/1.1" 200 331 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:19:14'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:23:15'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:23:15'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:23:15 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:23:15'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:23:15'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:23:15'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:23:15 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:23:15'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:24:01'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:24:01'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:24:01 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:24:01'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:24:01'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:24:01'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:24:01 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:24:01'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:24:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:24:58'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:24:58 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:24:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:24:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:24:58'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:24:58 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:24:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:25:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:25:00'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:25:00 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:25:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:25:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:25:00'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:25:00 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:25:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:25'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:25'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:28:25 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:28:25'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  userId: 11,
+  level: 'info',
+  message: 'User logged in: hhugokta@hotmail.com',
+  timestamp: '2025-10-05 14:28:55'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:28:55 +0000] "POST /api/auth/login HTTP/1.1" 200 331 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:28:55'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:55'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:55'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:28:55 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:28:55'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:55'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:55'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:28:55 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:28:55'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:58'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:28:58 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:28:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:58'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:28:58 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:28:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:58'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:28:58 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:28:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:59'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:59'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:28:59 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:28:59'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:59'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:59'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:28:59 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:28:59'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:59'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:59'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:28:59 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:28:59'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:30:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:30:00'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:30:00 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:30:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:30:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:30:00'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:30:00 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:30:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:30:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:30:00'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:30:00 +0000] "GET /api/auth/me HTTP/1.1" 500 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:30:00'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:14'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:14'
+}
+{
+  message: 'Skipping Redis connection for development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:14'
+}
+{
+  message: '🚀 Server running on port 3002',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:14'
+}
+{
+  message: '🏥 Academia Management System API v1.0.0',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:14'
+}
+{
+  message: '🌍 Environment: development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:14'
+}
+{
+  message: '📚 API Documentation: http://localhost:3002/api/docs',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:14'
+}
+{
+  message: '❤️  Health Check: http://localhost:3002/health',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:14'
+}
+{
+  message: '💾 Database: connected | 🔄 Redis: disconnected',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:14'
+}
+{
+  message: '🔧 To enable full functionality, configure MySQL and Redis',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:14'
+}
+{
+  message: '🚀 Available API Routes:',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:14'
+}
+{
+  message: '   POST /api/auth/register - Register new user',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:14'
+}
+{
+  message: '   POST /api/auth/login - User login',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:14'
+}
+{
+  message: '   GET  /health - Health check',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:14'
+}
+{
+  message: '   GET  /api/docs - API documentation',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:14'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:31:28 +0000] "GET /api/auth/me HTTP/1.1" 200 609 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:28'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:31:28 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:28'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/students/3',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 14:31:28',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:31:28 +0000] "GET /api/students/3 HTTP/1.1" 404 483 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:28'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/students/3',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 14:31:28',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:31:28 +0000] "GET /api/students/3 HTTP/1.1" 404 483 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:28'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/payments/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 14:31:28',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:31:28 +0000] "GET /api/payments/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:28'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/payments/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 14:31:28',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:31:28 +0000] "GET /api/payments/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:28'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/workouts/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 14:31:29',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:31:29 +0000] "GET /api/workouts/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:29'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/workouts/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 14:31:29',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:31:29 +0000] "GET /api/workouts/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:31:29'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:11'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:11'
+}
+{
+  message: 'Skipping Redis connection for development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:11'
+}
+{
+  message: '🚀 Server running on port 3002',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:11'
+}
+{
+  message: '🏥 Academia Management System API v1.0.0',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:11'
+}
+{
+  message: '🌍 Environment: development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:11'
+}
+{
+  message: '📚 API Documentation: http://localhost:3002/api/docs',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:11'
+}
+{
+  message: '❤️  Health Check: http://localhost:3002/health',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:11'
+}
+{
+  message: '💾 Database: connected | 🔄 Redis: disconnected',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:11'
+}
+{
+  message: '🔧 To enable full functionality, configure MySQL and Redis',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:11'
+}
+{
+  message: '🚀 Available API Routes:',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:11'
+}
+{
+  message: '   POST /api/auth/register - Register new user',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:11'
+}
+{
+  message: '   POST /api/auth/login - User login',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:11'
+}
+{
+  message: '   GET  /health - Health check',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:11'
+}
+{
+  message: '   GET  /api/docs - API documentation',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:11'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:27'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:27'
+}
+{
+  message: 'Skipping Redis connection for development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:27'
+}
+{
+  message: '🚀 Server running on port 3002',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:27'
+}
+{
+  message: '🏥 Academia Management System API v1.0.0',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:27'
+}
+{
+  message: '🌍 Environment: development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:27'
+}
+{
+  message: '📚 API Documentation: http://localhost:3002/api/docs',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:27'
+}
+{
+  message: '❤️  Health Check: http://localhost:3002/health',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:27'
+}
+{
+  message: '💾 Database: connected | 🔄 Redis: disconnected',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:27'
+}
+{
+  message: '🔧 To enable full functionality, configure MySQL and Redis',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:27'
+}
+{
+  message: '🚀 Available API Routes:',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:27'
+}
+{
+  message: '   POST /api/auth/register - Register new user',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:27'
+}
+{
+  message: '   POST /api/auth/login - User login',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:27'
+}
+{
+  message: '   GET  /health - Health check',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:27'
+}
+{
+  message: '   GET  /api/docs - API documentation',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:27'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:41'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:41'
+}
+{
+  message: 'Skipping Redis connection for development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:41'
+}
+{
+  message: '🚀 Server running on port 3002',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:41'
+}
+{
+  message: '🏥 Academia Management System API v1.0.0',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:41'
+}
+{
+  message: '🌍 Environment: development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:41'
+}
+{
+  message: '📚 API Documentation: http://localhost:3002/api/docs',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:41'
+}
+{
+  message: '❤️  Health Check: http://localhost:3002/health',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:41'
+}
+{
+  message: '💾 Database: connected | 🔄 Redis: disconnected',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:41'
+}
+{
+  message: '🔧 To enable full functionality, configure MySQL and Redis',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:41'
+}
+{
+  message: '🚀 Available API Routes:',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:41'
+}
+{
+  message: '   POST /api/auth/register - Register new user',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:41'
+}
+{
+  message: '   POST /api/auth/login - User login',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:41'
+}
+{
+  message: '   GET  /health - Health check',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:41'
+}
+{
+  message: '   GET  /api/docs - API documentation',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:33:41'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:40:53'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:40:53'
+}
+{
+  message: 'Skipping Redis connection for development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:40:53'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:45:55'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:45:55'
+}
+{
+  message: 'Skipping Redis connection for development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:45:55'
+}
+{
+  message: '🚀 Server running on port 3002',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:45:55'
+}
+{
+  message: '🏥 Academia Management System API v1.0.0',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:45:55'
+}
+{
+  message: '🌍 Environment: development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:45:55'
+}
+{
+  message: '📚 API Documentation: http://localhost:3002/api/docs',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:45:55'
+}
+{
+  message: '❤️  Health Check: http://localhost:3002/health',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:45:55'
+}
+{
+  message: '💾 Database: connected | 🔄 Redis: disconnected',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:45:55'
+}
+{
+  message: '🔧 To enable full functionality, configure MySQL and Redis',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:45:55'
+}
+{
+  message: '🚀 Available API Routes:',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:45:55'
+}
+{
+  message: '   POST /api/auth/register - Register new user',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:45:55'
+}
+{
+  message: '   POST /api/auth/login - User login',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:45:55'
+}
+{
+  message: '   GET  /health - Health check',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:45:55'
+}
+{
+  message: '   GET  /api/docs - API documentation',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:45:55'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  to: 'joao@test.com',
+  subject: undefined,
+  template: 'welcome',
+  error: 'nodemailer.createTransporter is not a function',
+  level: 'error',
+  message: 'Failed to send email',
+  timestamp: '2025-10-05 14:50:25'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  userId: 12,
+  error: 'nodemailer.createTransporter is not a function',
+  level: 'error',
+  message: 'Failed to send welcome email',
+  timestamp: '2025-10-05 14:50:25'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  userId: 12,
+  level: 'info',
+  message: 'New user registered: joao@test.com',
+  timestamp: '2025-10-05 14:50:25'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:50:25 +0000] "POST /api/auth/register HTTP/1.1" 201 336 "-" "axios/1.12.2"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:50:25'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  userId: 12,
+  level: 'info',
+  message: 'User logged in: joao@test.com',
+  timestamp: '2025-10-05 14:50:26'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:50:26 +0000] "POST /api/auth/login HTTP/1.1" 200 324 "-" "axios/1.12.2"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:50:26'
+}
+{
+  message: '::1 - - [05/Oct/2025:17:50:26 +0000] "GET /api/auth/me HTTP/1.1" 200 602 "-" "axios/1.12.2"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:50:26'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:55:21'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:55:21'
+}
+{
+  message: 'Skipping Redis connection for development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:55:21'
+}
+{
+  message: '🚀 Server running on port 3002',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:55:21'
+}
+{
+  message: '🏥 Academia Management System API v1.0.0',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:55:21'
+}
+{
+  message: '🌍 Environment: development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:55:21'
+}
+{
+  message: '📚 API Documentation: http://localhost:3002/api/docs',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:55:21'
+}
+{
+  message: '❤️  Health Check: http://localhost:3002/health',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:55:21'
+}
+{
+  message: '💾 Database: connected | 🔄 Redis: disconnected',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:55:21'
+}
+{
+  message: '🔧 To enable full functionality, configure MySQL and Redis',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:55:21'
+}
+{
+  message: '🚀 Available API Routes:',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:55:21'
+}
+{
+  message: '   POST /api/auth/register - Register new user',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:55:21'
+}
+{
+  message: '   POST /api/auth/login - User login',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:55:21'
+}
+{
+  message: '   GET  /health - Health check',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:55:21'
+}
+{
+  message: '   GET  /api/docs - API documentation',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:55:21'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  userId: 11,
+  level: 'info',
+  message: 'User logged in: hhugokta@hotmail.com',
+  timestamp: '2025-10-05 15:55:39'
+}
+{
+  message: '::1 - - [05/Oct/2025:18:55:39 +0000] "POST /api/auth/login HTTP/1.1" 200 331 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:55:39'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  userId: 12,
+  level: 'info',
+  message: 'User logged in: joao@test.com',
+  timestamp: '2025-10-05 15:56:05'
+}
+{
+  message: '::1 - - [05/Oct/2025:18:56:05 +0000] "POST /api/auth/login HTTP/1.1" 200 324 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:56:05'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  userId: 11,
+  level: 'info',
+  message: 'User logged in: hhugokta@hotmail.com',
+  timestamp: '2025-10-05 15:58:07'
+}
+{
+  message: '::1 - - [05/Oct/2025:18:58:07 +0000] "POST /api/auth/login HTTP/1.1" 200 331 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 15:58:07'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:02'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:02'
+}
+{
+  message: 'Skipping Redis connection for development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:02'
+}
+{
+  message: '🚀 Server running on port 3002',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:02'
+}
+{
+  message: '🏥 Academia Management System API v1.0.0',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:02'
+}
+{
+  message: '🌍 Environment: development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:02'
+}
+{
+  message: '📚 API Documentation: http://localhost:3002/api/docs',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:02'
+}
+{
+  message: '❤️  Health Check: http://localhost:3002/health',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:02'
+}
+{
+  message: '💾 Database: connected | 🔄 Redis: disconnected',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:02'
+}
+{
+  message: '🔧 To enable full functionality, configure MySQL and Redis',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:02'
+}
+{
+  message: '🚀 Available API Routes:',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:02'
+}
+{
+  message: '   POST /api/auth/register - Register new user',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:02'
+}
+{
+  message: '   POST /api/auth/login - User login',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:02'
+}
+{
+  message: '   GET  /health - Health check',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:02'
+}
+{
+  message: '   GET  /api/docs - API documentation',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:02'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  userId: 12,
+  level: 'info',
+  message: 'User logged in: joao@test.com',
+  timestamp: '2025-10-05 16:00:28'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:00:28 +0000] "POST /api/auth/login HTTP/1.1" 200 324 "-" "axios/1.12.2"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:28'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:00:28 +0000] "GET /api/auth/me HTTP/1.1" 200 602 "-" "axios/1.12.2"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:28'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:43'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:43'
+}
+{
+  message: 'Skipping Redis connection for development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:43'
+}
+{
+  message: '🚀 Server running on port 3002',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:43'
+}
+{
+  message: '🏥 Academia Management System API v1.0.0',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:43'
+}
+{
+  message: '🌍 Environment: development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:43'
+}
+{
+  message: '📚 API Documentation: http://localhost:3002/api/docs',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:43'
+}
+{
+  message: '❤️  Health Check: http://localhost:3002/health',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:43'
+}
+{
+  message: '💾 Database: connected | 🔄 Redis: disconnected',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:43'
+}
+{
+  message: '🔧 To enable full functionality, configure MySQL and Redis',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:43'
+}
+{
+  message: '🚀 Available API Routes:',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:43'
+}
+{
+  message: '   POST /api/auth/register - Register new user',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:43'
+}
+{
+  message: '   POST /api/auth/login - User login',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:43'
+}
+{
+  message: '   GET  /health - Health check',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:43'
+}
+{
+  message: '   GET  /api/docs - API documentation',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:43'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:50'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:50'
+}
+{
+  message: 'Skipping Redis connection for development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:50'
+}
+{
+  message: '🚀 Server running on port 3002',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:50'
+}
+{
+  message: '🏥 Academia Management System API v1.0.0',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:50'
+}
+{
+  message: '🌍 Environment: development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:50'
+}
+{
+  message: '📚 API Documentation: http://localhost:3002/api/docs',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:50'
+}
+{
+  message: '❤️  Health Check: http://localhost:3002/health',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:50'
+}
+{
+  message: '💾 Database: connected | 🔄 Redis: disconnected',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:50'
+}
+{
+  message: '🔧 To enable full functionality, configure MySQL and Redis',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:50'
+}
+{
+  message: '🚀 Available API Routes:',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:50'
+}
+{
+  message: '   POST /api/auth/register - Register new user',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:50'
+}
+{
+  message: '   POST /api/auth/login - User login',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:50'
+}
+{
+  message: '   GET  /health - Health check',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:50'
+}
+{
+  message: '   GET  /api/docs - API documentation',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:50'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  userId: 12,
+  level: 'info',
+  message: 'User logged in: joao@test.com',
+  timestamp: '2025-10-05 16:00:57'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:00:57 +0000] "POST /api/auth/login HTTP/1.1" 200 320 "-" "axios/1.12.2"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:57'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:00:57 +0000] "GET /api/auth/me HTTP/1.1" 200 602 "-" "axios/1.12.2"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:00:57'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:01:16'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:01:16'
+}
+{
+  message: 'Skipping Redis connection for development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:01:16'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  userId: 11,
+  level: 'info',
+  message: 'User logged in: hhugokta@hotmail.com',
+  timestamp: '2025-10-05 16:04:10'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:04:10 +0000] "POST /api/auth/login HTTP/1.1" 200 327 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:04:10'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:04:12 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:04:12'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:04:12 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:04:12'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/students/3',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:04:12',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:04:12 +0000] "GET /api/students/3 HTTP/1.1" 404 483 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:04:12'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/students/3',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:04:12',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:04:12 +0000] "GET /api/students/3 HTTP/1.1" 404 483 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:04:12'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/payments/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:04:12',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:04:12 +0000] "GET /api/payments/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:04:12'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/payments/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:04:12',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:04:12 +0000] "GET /api/payments/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:04:12'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/workouts/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:04:12',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:04:12 +0000] "GET /api/workouts/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:04:12'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/workouts/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:04:12',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:04:12 +0000] "GET /api/workouts/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:04:12'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:08 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:08'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:08 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:08'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/students/3',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:08',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:08 +0000] "GET /api/students/3 HTTP/1.1" 404 483 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:08'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/students/3',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:08',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:08 +0000] "GET /api/students/3 HTTP/1.1" 404 483 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:08'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/payments/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:08',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:08 +0000] "GET /api/payments/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:08'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/payments/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:08',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:08 +0000] "GET /api/payments/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:08'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/workouts/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:08',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:08 +0000] "GET /api/workouts/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:08'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/workouts/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:08',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:08 +0000] "GET /api/workouts/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:08'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:17 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:17'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:17 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:17'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/students/3',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:17',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:17 +0000] "GET /api/students/3 HTTP/1.1" 404 483 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:17'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/students/3',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:17',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:17 +0000] "GET /api/students/3 HTTP/1.1" 404 483 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:17'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/payments/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:17',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:17 +0000] "GET /api/payments/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:17'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/payments/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:17',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:17 +0000] "GET /api/payments/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:17'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/workouts/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:17',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:17 +0000] "GET /api/workouts/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:17'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/workouts/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:17',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:17 +0000] "GET /api/workouts/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:17'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:58 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:58'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:58 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/students/3',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:58',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:58 +0000] "GET /api/students/3 HTTP/1.1" 404 483 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/students/3',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:58',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:58 +0000] "GET /api/students/3 HTTP/1.1" 404 483 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/payments/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:58',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:58 +0000] "GET /api/payments/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/payments/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:58',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:58 +0000] "GET /api/payments/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/workouts/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:58',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:58 +0000] "GET /api/workouts/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/workouts/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:12:58',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:12:58 +0000] "GET /api/workouts/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:12:58'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:13:35 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:13:35'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:13:35 +0000] "GET /api/auth/me HTTP/1.1" 304 - "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:13:35'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/students/3',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:13:35',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:13:35 +0000] "GET /api/students/3 HTTP/1.1" 404 483 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:13:35'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/students/3',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:13:35',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:13:35 +0000] "GET /api/students/3 HTTP/1.1" 404 483 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:13:35'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/payments/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:13:35',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:13:35 +0000] "GET /api/payments/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:13:35'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/payments/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:13:35',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:13:35 +0000] "GET /api/payments/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:13:35'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/workouts/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:13:35',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:13:35 +0000] "GET /api/workouts/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:13:35'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  method: 'GET',
+  url: '/api/workouts/my',
+  ip: '::1',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0',
+  timestamp: '2025-10-05 16:13:35',
+  level: 'warn',
+  message: 'Route not found'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:13:35 +0000] "GET /api/workouts/my HTTP/1.1" 404 484 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:13:35'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  userId: 11,
+  level: 'info',
+  message: 'User logged out: hhugokta@hotmail.com',
+  timestamp: '2025-10-05 16:13:36'
+}
+{
+  message: '::1 - - [05/Oct/2025:19:13:36 +0000] "POST /api/auth/logout HTTP/1.1" 200 50 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:13:36'
+}
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:16:05'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:16:05'
+}
+{
+  message: 'Skipping Redis connection for development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:16:05'
+}
+{
+  message: '🚀 Server running on port 3002',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:16:05'
+}
+{
+  message: '🏥 Academia Management System API v1.0.0',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:16:05'
+}
+{
+  message: '🌍 Environment: development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:16:05'
+}
+{
+  message: '📚 API Documentation: http://localhost:3002/api/docs',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:16:05'
+}
+{
+  message: '❤️  Health Check: http://localhost:3002/health',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:16:05'
+}
+{
+  message: '💾 Database: connected | 🔄 Redis: disconnected',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:16:05'
+}
+{
+  message: '🔧 To enable full functionality, configure MySQL and Redis',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:16:05'
+}
+{
+  message: '🚀 Available API Routes:',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:16:05'
+}
+{
+  message: '   POST /api/auth/register - Register new user',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:16:05'
+}
+{
+  message: '   POST /api/auth/login - User login',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:16:05'
+}
+{
+  message: '   GET  /health - Health check',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:16:05'
+}
+{
+  message: '   GET  /api/docs - API documentation',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:16:05'
+}

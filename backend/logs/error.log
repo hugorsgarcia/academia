@@ -21648,3 +21648,1373 @@
   message: 'Failed to send welcome email',
   timestamp: '2025-10-05 11:48:34'
 }
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'Error',
+  message: 'Application Error Invalid email or password',
+  stack: 'Error: Invalid email or password\n' +
+    '    at login (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:90:21)',
+  request: {
+    method: 'POST',
+    url: '/api/auth/login',
+    ip: '::1',
+    userId: null,
+    body: { email: 'hhugokta@hotmail.com', password: '@Hu120164360' },
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:18:01'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'Error',
+  message: 'Application Error Invalid email or password',
+  stack: 'Error: Invalid email or password\n' +
+    '    at login (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:90:21)',
+  request: {
+    method: 'POST',
+    url: '/api/auth/login',
+    ip: '::1',
+    userId: null,
+    body: { email: 'hhugokta@hotmail.com', password: '@Hu120164360' },
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:18:31'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:23:15'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:23:15'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:23:15'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:23:15'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:24:01'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:24:01'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:24:01'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:24:01'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:24:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:24:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:24:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:24:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:25:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:25:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:25:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:25:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:25'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:25'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:55'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:55'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:55'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:55'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:58'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:59'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:59'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:59'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:59'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:28:59'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:28:59'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:30:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:30:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:30:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:30:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  nativeError: Error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'
+      at Packet.asError (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packets\packet.js:740:17)
+      at Query.execute (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:475:34)
+      at PacketParser.onPacket (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:93:12)
+      at PacketParser.executeStart (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\mysql2\lib\base\connection.js:100:25)
+      at Socket.emit (node:events:519:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'firstName' in 'field list'",
+    sql: 'select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11'
+  },
+  client: 'mysql',
+  level: 'error',
+  message: "Get profile error: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  timestamp: '2025-10-05 14:30:00'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'DBError',
+  message: "Application Error select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'",
+  stack: "DBError: select `id`, `email`, `firstName`, `lastName`, `userType`, `status`, `createdAt` from `users` where `users`.`id` = 11 - Unknown column 'firstName' in 'field list'\n" +
+    '    at wrapError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\db-errors\\lib\\dbErrors.js:19:14)\n' +
+    '    at handleExecuteError (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:1140:32)\n' +
+    '    at QueryBuilder.execute (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\objection\\lib\\queryBuilder\\QueryBuilder.js:449:20)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async getProfile (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:321:20)',
+  request: {
+    method: 'GET',
+    url: '/api/auth/me',
+    ip: '::1',
+    userId: 11,
+    body: {},
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 14:30:00'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::3002
+      at Server.setupListenHandle [as _listen2] (node:net:1904:16)
+      at listenInCluster (node:net:1961:12)
+      at Server.listen (node:net:2063:7)
+      at Function.listen (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\express\lib\application.js:635:24)
+      at Server.start (C:\Users\Hugo Garcia\Desktop\academia-master\backend\src\server.js:142:30)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 3002
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::3002\n' +
+    'Error: listen EADDRINUSE: address already in use :::3002\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1904:16)\n' +
+    '    at listenInCluster (node:net:1961:12)\n' +
+    '    at Server.listen (node:net:2063:7)\n' +
+    '    at Function.listen (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at Server.start (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\server.js:142:30)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::3002\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1904:16)\n' +
+    '    at listenInCluster (node:net:1961:12)\n' +
+    '    at Server.listen (node:net:2063:7)\n' +
+    '    at Function.listen (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at Server.start (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\server.js:142:30)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  exception: true,
+  date: 'Sun Oct 05 2025 14:40:53 GMT-0300 (Horário Padrão de Brasília)',
+  process: {
+    pid: 12572,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\server.js'
+    ],
+    memoryUsage: {
+      rss: 118190080,
+      heapTotal: 78008320,
+      heapUsed: 24611768,
+      external: 2291762,
+      arrayBuffers: 17140
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 503110.125 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1904,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1961,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2063,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\server.js',
+      function: 'Server.start',
+      line: 142,
+      method: 'start',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'process.processTicksAndRejections',
+      line: 95,
+      method: 'processTicksAndRejections',
+      native: false
+    }
+  ],
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 14:40:53'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  to: 'joao@test.com',
+  subject: undefined,
+  template: 'welcome',
+  error: 'nodemailer.createTransporter is not a function',
+  level: 'error',
+  message: 'Failed to send email',
+  timestamp: '2025-10-05 14:50:25'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  userId: 12,
+  error: 'nodemailer.createTransporter is not a function',
+  level: 'error',
+  message: 'Failed to send welcome email',
+  timestamp: '2025-10-05 14:50:25'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::3002
+      at Server.setupListenHandle [as _listen2] (node:net:1904:16)
+      at listenInCluster (node:net:1961:12)
+      at Server.listen (node:net:2063:7)
+      at Function.listen (C:\Users\Hugo Garcia\Desktop\academia-master\backend\node_modules\express\lib\application.js:635:24)
+      at Server.start (C:\Users\Hugo Garcia\Desktop\academia-master\backend\src\server.js:142:30)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+    code: 'EADDRINUSE',
+    errno: -4091,
+    syscall: 'listen',
+    address: '::',
+    port: 3002
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::3002\n' +
+    'Error: listen EADDRINUSE: address already in use :::3002\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1904:16)\n' +
+    '    at listenInCluster (node:net:1961:12)\n' +
+    '    at Server.listen (node:net:2063:7)\n' +
+    '    at Function.listen (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at Server.start (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\server.js:142:30)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::3002\n' +
+    '    at Server.setupListenHandle [as _listen2] (node:net:1904:16)\n' +
+    '    at listenInCluster (node:net:1961:12)\n' +
+    '    at Server.listen (node:net:2063:7)\n' +
+    '    at Function.listen (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\express\\lib\\application.js:635:24)\n' +
+    '    at Server.start (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\server.js:142:30)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  exception: true,
+  date: 'Sun Oct 05 2025 16:01:16 GMT-0300 (Horário Padrão de Brasília)',
+  process: {
+    pid: 1840,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v20.18.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\server.js'
+    ],
+    memoryUsage: {
+      rss: 117657600,
+      heapTotal: 77221888,
+      heapUsed: 24565440,
+      external: 2316966,
+      arrayBuffers: 17316
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 507933.437 },
+  trace: [
+    {
+      column: 16,
+      file: 'node:net',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1904,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:net',
+      function: 'listenInCluster',
+      line: 1961,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'node:net',
+      function: 'Server.listen',
+      line: 2063,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\node_modules\\express\\lib\\application.js',
+      function: 'Function.listen',
+      line: 635,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 30,
+      file: 'C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\server.js',
+      function: 'Server.start',
+      line: 142,
+      method: 'start',
+      native: false
+    },
+    {
+      column: 5,
+      file: 'node:internal/process/task_queues',
+      function: 'process.processTicksAndRejections',
+      line: 95,
+      method: 'processTicksAndRejections',
+      native: false
+    }
+  ],
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 16:01:16'
+}

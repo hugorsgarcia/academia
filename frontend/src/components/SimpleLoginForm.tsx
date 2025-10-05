@@ -2,9 +2,11 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { useAuth } from '@/hooks/use-auth';
 
 export function SimpleLoginForm() {
   const router = useRouter();
+  const { login } = useAuth();
   const [formData, setFormData] = useState({
     email: '',
     password: ''
@@ -57,20 +59,19 @@ export function SimpleLoginForm() {
         throw new Error(result.message || 'Email ou senha incorretos');
       }
 
-      // Store token in localStorage
-      localStorage.setItem('authToken', result.data.token);
-      localStorage.setItem('userData', JSON.stringify(result.data.user));
+      // Use the auth context to login
+      login(result.data.token, result.data.user);
 
       setSuccess("Login realizado com sucesso! Redirecionando...");
       
       // Redirect based on user type
-      const userType = result.data.user.userType;
-      if (userType === 'student') {
-        window.location.href = '/aluno';
-      } else if (userType === 'admin') {
-        window.location.href = '/admin';
+      const userRole = result.data.user.role;
+      if (userRole === 'student') {
+        router.push('/aluno');
+      } else if (userRole === 'admin' || userRole === 'super_admin') {
+        router.push('/admin');
       } else {
-        window.location.href = '/';
+        router.push('/');
       }
 
     } catch (error) {

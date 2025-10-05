@@ -1,6 +1,6 @@
 "use client";
 
-import { useAuth } from '@/hooks/use-auth';
+import { useAuth } from '../hooks/use-auth';
 import { useEffect } from 'react';
 
 interface ProtectedRouteProps {
@@ -23,7 +23,7 @@ export function ProtectedRoute({
         return;
       }
 
-      if (requiredUserType && user && !requiredUserType.includes(user.userType)) {
+      if (requiredUserType && user && !requiredUserType.includes(user.role)) {
         alert('Você não tem permissão para acessar esta página');
         window.location.href = '/';
         return;
@@ -52,7 +52,7 @@ export function ProtectedRoute({
     );
   }
 
-  if (requiredUserType && user && !requiredUserType.includes(user.userType)) {
+  if (requiredUserType && user && !requiredUserType.includes(user.role)) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">

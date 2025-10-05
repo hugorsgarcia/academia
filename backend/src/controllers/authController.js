@@ -9,7 +9,7 @@ const { sendEmail } = require('../utils/email');
 class AuthController {
   async register(req, res, next) {
     try {
-      const { email, password, firstName, lastName, userType } = req.body;
+      const { email, password, firstName, lastName, userType, name, role } = req.body;
 
       // Check if user already exists
       const existingUser = await User.query().findOne({ email });
@@ -17,17 +17,21 @@ class AuthController {
         return next(new AppError('Email already registered', 400));
       }
 
+      // Support both old format (firstName + lastName + userType) and new format (name + role)
+      const userName = name || `${firstName || ''} ${lastName || ''}`.trim();
+      const userRole = role || userType;
+
       // Create user
       const user = await User.query().insertAndFetch({
         email,
         password,
-        name: `${firstName} ${lastName}`,
-        role: userType,
+        name: userName,
+        role: userRole,
         isActive: true
       });
 
       // If user is a student, create student record
-      if (userType === 'student') {
+      if (userRole === 'student') {
         await Student.query().insert({
           user_id: user.id,
           registration_number: `STU${Date.now()}`,
@@ -66,7 +70,7 @@ class AuthController {
             id: user.id,
             email: user.email,
             name: user.name,
-            userType: user.role
+            role: user.role
           },
           token
         }
@@ -111,7 +115,7 @@ class AuthController {
             id: user.id,
             email: user.email,
             name: user.name,
-            userType: user.role
+            role: user.role
           },
           token
         }
@@ -320,15 +324,28 @@ class AuthController {
 
       const user = await User.query()
         .findById(userId)
-        .select('id', 'email', 'firstName', 'lastName', 'userType', 'status', 'createdAt');
+        .select('id', 'email', 'name', 'role', 'isActive', 'created_at');
 
       if (!user) {
         return next(new AppError('User not found', 404));
       }
 
+      // Se o usuário é um estudante, buscar dados adicionais do estudante
+      let studentData = null;
+      if (user.role === 'student') {
+        const Student = require('../models/Student');
+        studentData = await Student.query()
+          .where('user_id', userId)
+          .first();
+      }
+
       res.json({
         status: 'success',
-        data: { user }
+        data: { 
+          user,
+          student_id: studentData?.id || null,
+          student: studentData || null
+        }
       });
     } catch (error) {
       logger.error('Get profile error:', error);
