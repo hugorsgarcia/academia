@@ -4,6 +4,7 @@ const User = require('../models/User');
 const Student = require('../models/Student');
 const { AppError } = require('../utils/appError');
 const logger = require('../utils/logger');
+const { sendEmail } = require('../utils/email');
 
 class AuthController {
   async register(req, res, next) {
@@ -32,6 +33,20 @@ class AuthController {
           registration_number: `STU${Date.now()}`,
           status: 'pending'
         });
+
+        // Send welcome email to student
+        try {
+          await sendEmail({
+            to: user.email,
+            template: 'welcome',
+            data: {
+              name: user.name,
+              loginUrl: `${process.env.FRONTEND_URL}/aluno/login`
+            }
+          });
+        } catch (emailError) {
+          logger.error('Failed to send welcome email', { userId: user.id, error: emailError.message });
+        }
       }
 
       // Generate JWT token
@@ -170,10 +185,25 @@ class AuthController {
 
       logger.info(`Password reset requested: ${email}`, { userId: user.id });
 
+      // Send password reset email
+      try {
+        const resetUrl = `${process.env.FRONTEND_URL}/resetar-senha?token=${resetToken}`;
+        await sendEmail({
+          to: user.email,
+          template: 'passwordReset',
+          data: {
+            name: user.name,
+            resetUrl
+          }
+        });
+      } catch (emailError) {
+        logger.error('Failed to send password reset email', { userId: user.id, error: emailError.message });
+        // Do not expose email sending failure to the user for security reasons
+      }
+
       res.json({
         status: 'success',
-        message: 'Password reset token generated',
-        data: { resetToken } // In production, don't return token directly
+        message: 'Se um usuário com este e-mail existir, um link para redefinição de senha foi enviado.'
       });
     } catch (error) {
       logger.error('Forgot password error:', error);

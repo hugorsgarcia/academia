@@ -70,6 +70,21 @@ const templates = {
         <p>Se você já renovou, ignore este e-mail.</p>
       </div>
     `
+  },
+  welcome: {
+    subject: 'Bem-vindo(a) à Academia!',
+    html: (data) => `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+        <h2>Bem-vindo(a), ${data.name}!</h2>
+        <p>Sua conta foi criada com sucesso. Estamos muito felizes em ter você conosco!</p>
+        <p>Seu acesso à plataforma já está liberado. Explore seus treinos, acompanhe seu progresso e não hesite em falar com nossos instrutores.</p>
+        <a href="${data.loginUrl}" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+          Acessar Minha Conta
+        </a>
+        <p>Bons treinos!</p>
+        <p><strong>Equipe Academia</strong></p>
+      </div>
+    `
   }
 };
 

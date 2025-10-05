@@ -4878,3 +4878,75 @@
   level: 'error',
   timestamp: '2025-09-28 20:10:52'
 }
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'Error',
+  message: 'Application Error Email already registered',
+  stack: 'Error: Email already registered\n' +
+    '    at register (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:17:21)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  request: {
+    method: 'POST',
+    url: '/api/auth/register',
+    ip: '::1',
+    userId: null,
+    body: {
+      firstName: 'Hugo',
+      lastName: 'Garcia',
+      email: 'hhugokta@hotmail.com',
+      password: '@Hu123456',
+      userType: 'student'
+    },
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 11:46:08'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'Error',
+  message: 'Application Error Email already registered',
+  stack: 'Error: Email already registered\n' +
+    '    at register (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:17:21)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  request: {
+    method: 'POST',
+    url: '/api/auth/register',
+    ip: '::1',
+    userId: null,
+    body: {
+      firstName: 'Hugo',
+      lastName: 'Garcia',
+      email: 'hhugokta@hotmail.com',
+      password: '@Hu123456',
+      userType: 'student'
+    },
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 11:46:40'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  to: 'hhugokta@hotmail.com',
+  subject: undefined,
+  template: 'welcome',
+  error: 'nodemailer.createTransporter is not a function',
+  level: 'error',
+  message: 'Failed to send email',
+  timestamp: '2025-10-05 11:48:34'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  userId: 11,
+  error: 'nodemailer.createTransporter is not a function',
+  level: 'error',
+  message: 'Failed to send welcome email',
+  timestamp: '2025-10-05 11:48:34'
+}

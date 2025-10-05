@@ -4,6 +4,7 @@ const Subscription = require('../models/Subscription');
 const { AppError } = require('../utils/appError');
 const logger = require('../utils/logger');
 const { validationResult } = require('express-validator');
+const { sendEmail } = require('../utils/email');
 
 class PaymentController {
   // GET /api/payments
@@ -188,6 +189,7 @@ class PaymentController {
         message: 'Pagamento atualizado com sucesso',
         data: updatedPayment
       });
+      
     } catch (error) {
       next(error);
     }

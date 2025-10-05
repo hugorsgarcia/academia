@@ -24,6 +24,12 @@ Backend robusto desenvolvido com Node.js, Express, MySQL e integrações complet
 - Atribuição de treinos a alunos
 - Acompanhamento de progresso
 
+### ✨ **Recursos com Inteligência Artificial**
+- **Gerador de Treinos Personalizados**: Cria planos de treino completos com base no perfil e objetivos do aluno.
+- **Assistente de Exercícios**: Um chat para instrutores tirarem dúvidas sobre técnicas, alternativas e correções de exercícios.
+- **Análise de Sentimento**: Analisa reviews e feedbacks de alunos para extrair insights valiosos.
+- **Criação de Conteúdo para Blog**: (Se aplicável) Assistência na criação de artigos e posts.
+
 ### 💳 **Pagamentos Integrados**
 - Stripe para cartões internacionais
 - Mercado Pago para PIX e cartões brasileiros

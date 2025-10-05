@@ -4,6 +4,7 @@ const router = express.Router();
 // Import route modules
 const authRoutes = require('./auth');
 const healthRoutes = require('./health');
+const subscriptionRoutes = require('./subscriptions');
 // Temporarily disabled to isolate issues
 // const userRoutes = require('./users');
 // const studentRoutes = require('./students');
@@ -29,6 +30,7 @@ router.get('/', (req, res) => {
       users: '/users',
       students: '/students',
       trainers: '/trainers',
+      subscriptions: '/subscriptions',
       exercises: '/exercises',
       workouts: '/workouts',
       plans: '/plans',
@@ -47,6 +49,7 @@ router.get('/', (req, res) => {
 // Mount routes
 router.use('/auth', authRoutes);
 router.use('/health', healthRoutes);
+router.use('/subscriptions', subscriptionRoutes);
 // Temporarily disabled to isolate issues
 // router.use('/users', userRoutes);
 // router.use('/students', studentRoutes);

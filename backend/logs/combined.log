@@ -14912,3 +14912,224 @@
   environment: 'development',
   timestamp: '2025-09-28 20:18:00'
 }
+{
+  message: 'Database connection established successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:46:01'
+}
+{
+  message: 'Database connected successfully',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:46:01'
+}
+{
+  message: 'Skipping Redis connection for development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:46:01'
+}
+{
+  message: '🚀 Server running on port 3002',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:46:01'
+}
+{
+  message: '🏥 Academia Management System API v1.0.0',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:46:01'
+}
+{
+  message: '🌍 Environment: development',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:46:01'
+}
+{
+  message: '📚 API Documentation: http://localhost:3002/api/docs',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:46:01'
+}
+{
+  message: '❤️  Health Check: http://localhost:3002/health',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:46:01'
+}
+{
+  message: '💾 Database: connected | 🔄 Redis: disconnected',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:46:01'
+}
+{
+  message: '🔧 To enable full functionality, configure MySQL and Redis',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:46:01'
+}
+{
+  message: '🚀 Available API Routes:',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:46:01'
+}
+{
+  message: '   POST /api/auth/register - Register new user',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:46:01'
+}
+{
+  message: '   POST /api/auth/login - User login',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:46:01'
+}
+{
+  message: '   GET  /health - Health check',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:46:01'
+}
+{
+  message: '   GET  /api/docs - API documentation',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:46:01'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'Error',
+  message: 'Application Error Email already registered',
+  stack: 'Error: Email already registered\n' +
+    '    at register (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:17:21)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  request: {
+    method: 'POST',
+    url: '/api/auth/register',
+    ip: '::1',
+    userId: null,
+    body: {
+      firstName: 'Hugo',
+      lastName: 'Garcia',
+      email: 'hhugokta@hotmail.com',
+      password: '@Hu123456',
+      userType: 'student'
+    },
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 11:46:08'
+}
+{
+  message: '::1 - - [05/Oct/2025:14:46:08 +0000] "POST /api/auth/register HTTP/1.1" 400 459 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:46:08'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  name: 'Error',
+  message: 'Application Error Email already registered',
+  stack: 'Error: Email already registered\n' +
+    '    at register (C:\\Users\\Hugo Garcia\\Desktop\\academia-master\\backend\\src\\controllers\\authController.js:17:21)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  request: {
+    method: 'POST',
+    url: '/api/auth/register',
+    ip: '::1',
+    userId: null,
+    body: {
+      firstName: 'Hugo',
+      lastName: 'Garcia',
+      email: 'hhugokta@hotmail.com',
+      password: '@Hu123456',
+      userType: 'student'
+    },
+    query: {},
+    params: {}
+  },
+  level: 'error',
+  timestamp: '2025-10-05 11:46:40'
+}
+{
+  message: '::1 - - [05/Oct/2025:14:46:40 +0000] "POST /api/auth/register HTTP/1.1" 400 459 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:46:40'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  to: 'hhugokta@hotmail.com',
+  subject: undefined,
+  template: 'welcome',
+  error: 'nodemailer.createTransporter is not a function',
+  level: 'error',
+  message: 'Failed to send email',
+  timestamp: '2025-10-05 11:48:34'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  userId: 11,
+  error: 'nodemailer.createTransporter is not a function',
+  level: 'error',
+  message: 'Failed to send welcome email',
+  timestamp: '2025-10-05 11:48:34'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  userId: 11,
+  level: 'info',
+  message: 'New user registered: hhugokta@hotmail.com',
+  timestamp: '2025-10-05 11:48:34'
+}
+{
+  message: '::1 - - [05/Oct/2025:14:48:34 +0000] "POST /api/auth/register HTTP/1.1" 201 343 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:48:34'
+}
+{
+  service: 'academia-api',
+  environment: 'development',
+  userId: 11,
+  level: 'info',
+  message: 'User logged in: hhugokta@hotmail.com',
+  timestamp: '2025-10-05 11:50:48'
+}
+{
+  message: '::1 - - [05/Oct/2025:14:50:48 +0000] "POST /api/auth/login HTTP/1.1" 200 331 "http://localhost:9002/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0"',
+  level: 'info',
+  service: 'academia-api',
+  environment: 'development',
+  timestamp: '2025-10-05 11:50:48'
+}
